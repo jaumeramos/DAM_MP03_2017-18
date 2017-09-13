@@ -1,21 +1,27 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package java_20170913;
-
-/**
- *
- * @author jaume
- */
 public class Java_20170913 {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    
+    static int  count = 0;
+    
+    public static  void saludar(){
+        System.out.println("Saludo!! Num: " + ++count);
     }
     
+    public static void main(String[] args) {
+        Java_20170913 obj = new Java_20170913();
+        obj.saludar();
+        
+        Java_20170913 obj1 = new Java_20170913();
+        obj1.saludar();
+        obj1.saludar();
+        
+        Java_20170913 obj2 = new Java_20170913();        
+        obj2.saludar();
+        
+        Java_20170913.saludar();
+        
+        
+        
+        
+    }    
 }
