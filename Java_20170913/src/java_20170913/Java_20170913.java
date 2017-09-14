@@ -8,6 +8,9 @@ public class Java_20170913 {
     }
     
     public static void main(String[] args) {
+        
+        String s = "jpña";
+        
         Java_20170913 obj = new Java_20170913();
         obj.saludar();
         
@@ -19,6 +22,7 @@ public class Java_20170913 {
         obj2.saludar();
         
         Java_20170913.saludar();
+        System.out.println(Java_20170913.count);
         
         
         
