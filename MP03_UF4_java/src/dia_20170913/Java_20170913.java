@@ -1,4 +1,4 @@
-package java_20170913;
+package dia_20170913;
 public class Java_20170913 {
     
     static int  count = 0;
