@@ -165,6 +165,7 @@ public class A1_Cronometre {
             long temps = this.finalAbsolut - this.iniciAbsolut;
             System.out.println("Temps amb el crono actiu: ");
             mostrarTemps(temps);
+            reset();
         } else {
             System.out.println("Crono no aturat");
         }
@@ -196,7 +197,10 @@ public class A1_Cronometre {
     }
 
     public static void main(String[] args) {
-        A1_Cronometre c1 = new A1_Cronometre();
+        A1_Cronometre c1 = new A1_Cronometre();        
+        A1_Cronometre c2 = new A1_Cronometre();
+        
+        c2.show();
 
         c1.start();
         c1.start();
