@@ -1,5 +1,7 @@
 
-package dia_20170920;
+package dia_20170921;
+
+import dia_20170920.*;
 
 
 
@@ -43,19 +45,5 @@ public class Rectangle {
         return new Punt(x,y );
     }
     
-
-
-    public static void main(String[] args) {
-        
-        Punt p1 = new Punt(5 ,7);
-        Punt p2 = new Punt(7 ,10);
-        Rectangle r = new Rectangle(p1,p2 );
-        System.out.println(r.centre());
-        System.out.println(r.centre1());
-        
-        
-                
-    }
-
 
 }
