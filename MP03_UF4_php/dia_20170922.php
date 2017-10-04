@@ -12,6 +12,7 @@ class PrimeraClasse {
         $this->atribut = $param;
     }    
     
+    
     public function mostrar(){
         echo $this->atribut;
     }
@@ -31,12 +32,12 @@ class PrimeraClasse {
     
 }
 
-/*
+
 $obj = new PrimeraClasse("Objecte 1 \n");
-$obj1 = new PrimeraClasse(123456);
+//obj1 = new PrimeraClasse(123456);
 
 $obj->parametresVariables(1, 'a', 3.4, "hola");
-
+/*
 PrimeraClasse::mostrarEstatic();
 
 
