@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="ExempleUML">
+  <ClassDiagramComponents>
+    <Class name="A" package="" visibility="public" xPosition="107.0" yPosition="64.0">
+      <Fields>
+        <Field name="a" type="int" visibility="private"/>
+        <Field name="b" type="int" visibility="protected"/>
+        <Field name="c" type="int" visibility="public"/>
+        <Field name="d" type="int" visibility="package"/>
+        <Field name="n" type="CLASENova" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="i"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="double" name="d"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="setA" returnType="int" visibility="public">
+          <Argument type="int" name="i"/>
+        </Method>
+        <Method name="setB" returnType="int" visibility="protected">
+          <Argument type="int" name="i"/>
+        </Method>
+        <Method name="setC" returnType="int" visibility="private">
+          <Argument type="int" name="i"/>
+        </Method>
+        <Method name="setD" returnType="int" visibility="package">
+          <Argument type="int" name="i"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="B" package="" visibility="public" isAbstract="true" xPosition="132.0" yPosition="362.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="C" package="" visibility="public" xPosition="132.0" yPosition="489.0">
+      <Fields>
+        <Field name="agregacio" type="D" visibility="private"/>
+        <Field name="composicio" type="D" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="fer" returnType="void" visibility="public">
+          <Argument type="E" name="e"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="UnInterface" package="" visibility="public" xPosition="415.0" yPosition="75.0">
+      <Methods>
+        <Method name="fesAlgunaCosa" returnType="void" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Enum name="Moneda" package="" visibility="public" xPosition="463.0" yPosition="313.0">
+      <Literals>
+        <Literal name="EURO"/>
+        <Literal name="DOLAR"/>
+      </Literals>
+    </Enum>
+    <Class name="D" package="" visibility="public" xPosition="463.0" yPosition="438.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="E" package="" visibility="public" xPosition="475.0" yPosition="551.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="composicio" source="C" target="D" type="Composition" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="B" target="A"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="B" target="UnInterface"/>
+    <UseRelation name="" source="C" target="E" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="C" target="B"/>
+    <HasRelation name="agregacio" source="C" target="D" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

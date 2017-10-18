@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Robot">
+  <ClassDiagramComponents>
+    <Class name="Rectangle" package="" visibility="public" xPosition="52.0" yPosition="305.0">
+      <Fields>
+        <Field name="p1" type="Punt" visibility="private"/>
+        <Field name="p3" type="Punt" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Punt" name="p1"/>
+          <Argument type="Punt" name="p3"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Quadrat" package="" visibility="public" xPosition="310.0" yPosition="322.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Punt" name="p1"/>
+          <Argument type="double" name="costat"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Cercle" package="" visibility="public" xPosition="569.0" yPosition="305.0">
+      <Fields>
+        <Field name="centre" type="Punt" visibility="private"/>
+        <Field name="radi" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Punt" name="centre"/>
+          <Argument type="double" name="radi"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Interface name="FiguraGeometrica" package="" visibility="public" xPosition="64.0" yPosition="3.0">
+      <Methods>
+        <Method name="calcularArea" returnType="double" visibility="public"/>
+        <Method name="calcularPerimetre" returnType="double" visibility="public"/>
+        <Method name="calcularCentre" returnType="double" visibility="public"/>
+        <Method name="getXMax" returnType="double" visibility="public"/>
+        <Method name="getXMin" returnType="double" visibility="public"/>
+        <Method name="getYMax" returnType="double" visibility="public"/>
+        <Method name="getYMin" returnType="double" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Class name="Robot" package="" visibility="public" xPosition="350.0" yPosition="494.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Punt" package="" visibility="public" xPosition="467.0" yPosition="14.0">
+      <Fields>
+        <Field name="x" type="double" visibility="private"/>
+        <Field name="y" type="double" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="distanciaPunt" returnType="double" visibility="public">
+          <Argument type="Punt" name="p"/>
+        </Method>
+        <Method name="distanciaX" returnType="double" visibility="public">
+          <Argument type="Punt" name="p"/>
+        </Method>
+        <Method name="distanciaY" returnType="double" visibility="public">
+          <Argument type="Punt" name="p"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Cercle" target="FiguraGeometrica"/>
+    <HasRelation name="camaDreta" source="Robot" target="Rectangle" type="Composition" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="cap" source="Robot" target="Cercle" type="Composition" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="cos" source="Robot" target="Quadrat" type="Composition" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Quadrat" target="FiguraGeometrica"/>
+    <HasRelation name="brasDret" source="Robot" target="Rectangle" type="Composition" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Quadrat" target="Rectangle"/>
+    <HasRelation name="camaEsquerra" source="Robot" target="Rectangle" type="Composition" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Rectangle" target="FiguraGeometrica"/>
+    <HasRelation name="brasEsquerre" source="Robot" target="Rectangle" type="Composition" sourceCardinality="0..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
