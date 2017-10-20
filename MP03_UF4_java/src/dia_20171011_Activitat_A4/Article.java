@@ -1,4 +1,4 @@
-package dia_20171011;
+package dia_20171011_Activitat_A4;
 
 
 public class Article implements Cloneable, InterfaceArticle {
@@ -8,6 +8,8 @@ public class Article implements Cloneable, InterfaceArticle {
     
     protected double preuCompra;
     protected double percentatgeBenefici;
+    
+    
     
     
     public Article(int codi, String nom,  double preuCompra){
@@ -98,6 +100,7 @@ public class Article implements Cloneable, InterfaceArticle {
     @Override
     public Article clone() throws CloneNotSupportedException{
         Article a = (Article)super.clone();
+        
         
         return a;
         

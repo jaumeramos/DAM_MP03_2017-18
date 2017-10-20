@@ -1,5 +1,5 @@
 
-package dia_20171011;
+package dia_20171011_Activitat_A4;
 
 import static java.lang.Thread.sleep;
 import java.util.Date;

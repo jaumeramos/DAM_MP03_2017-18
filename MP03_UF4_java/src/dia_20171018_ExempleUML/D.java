@@ -1,7 +1,7 @@
 package dia_20171018_ExempleUML;
 
 
-import dia_20171011.Article;
+import dia_20171011_Activitat_A4.Article;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
