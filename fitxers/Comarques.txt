@@ -1,0 +1,84 @@
+5
+Alta Ribagorça
+26
+Pallars Sobirà
+29
+Priorat
+39
+Aran
+37
+Terra Alta
+42
+Moianès
+25
+Pallars Jussà
+35
+Solsonès
+15
+Cerdanya
+18
+Garrigues
+16
+Conca de Barberà
+4
+Alt Urgell
+30
+Ribera d'Ebre
+32
+Segarra
+31
+Ripollès
+28
+Pla de l'Estany
+38
+Urgell
+27
+Pla d'Urgell
+23
+Noguera
+14
+Berguedà
+1
+Alt Camp
+19
+Garrotxa
+22
+Montsià
+9
+Baix Ebre
+12
+Baix Penedès
+3
+Alt Penedès
+6
+Anoia
+10
+Baix Empordà
+2
+Alt Empordà
+17
+Garraf
+24
+Osona
+34
+Selva
+7
+Bages
+20
+Gironès
+8
+Baix Camp
+33
+Segrià
+36
+Tarragonès
+41
+Vallès Oriental
+21
+Maresme
+11
+Baix Llobregat
+40
+Vallès Occidental
+13
+Barcelonès
