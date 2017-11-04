@@ -46,6 +46,7 @@ public class Main {
                     String o2Invers = new StringBuilder(o2.getNom()).reverse().toString();
                     
                     //Collator catalan = Collator.getInstance(Locale.FRENCH);
+                    
                     Collator catalan = Collator.getInstance(new Locale("ca", "ES"));
                     return catalan.compare(o1Invers, o2Invers);                    
                     
