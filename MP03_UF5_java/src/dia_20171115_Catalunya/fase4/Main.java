@@ -1,4 +1,4 @@
-package dia_20171111_Catalunya.fase2;
+package dia_20171115_Catalunya.fase4;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -8,7 +8,7 @@ public class Main {
 
     public static void main(String[] args) throws FileNotFoundException {
 
-
+        
         Pais catalunya = new Pais("Catalunya");
 
         Scanner in = new Scanner(new FileReader("Comarques.txt"));
@@ -19,8 +19,7 @@ public class Main {
             catalunya.afegirComarca(c);
         }
         in.close();
-        catalunya.mostrarComarques();
-
+        
         in = new Scanner(new FileReader("Municipis.txt"));
         while (in.hasNext()) {
             int codiComarca = Integer.parseInt(in.nextLine());
@@ -30,12 +29,28 @@ public class Main {
             double superficie = Double.parseDouble(in.nextLine());
             Municipi m = new Municipi(codiComarca, codiMunicipi, nom, habitants, superficie);
             catalunya.afegirMunicipi(m);
+            //System.out.println(m);
 
         }
         in.close();
-        catalunya.mostrarMunicipis();
-        
 
+        in = new Scanner(new FileReader("EMDs.txt"));
+        while (in.hasNext()) {
+            int codiMunicipi = Integer.parseInt(in.nextLine());
+            long codiEMD = Long.parseLong(in.nextLine());
+            String nom = in.nextLine();
+            EMD e = new EMD(codiMunicipi, codiEMD, nom);
+            catalunya.afegirEMD(e);
+            //System.out.println(e);
+
+        }
+        in.close();
+        
+        catalunya.mostrarComarques();        
+        catalunya.mostrarMunicipis();        
+        //catalunya.mostrarEMDs();
+        System.out.println(catalunya);
+        
         catalunya.mostrarMunicipiMesHabitants();
         catalunya.mostrarMunicipiMenysHabitants();
         
@@ -47,9 +62,14 @@ public class Main {
 
         catalunya.mostrarComarcaMesHabitants();
         catalunya.mostrarComarcaMenysHabitants();
-
-
-    	
+        
+        System.out.println(catalunya.cercarMunicipi("Rasquera"));
+        
+        System.out.println(catalunya.cercarMunicipi(251333));
+        
+        catalunya.mostrarMunicipiMesEMD();
+        
+        
     }
 
 }

@@ -1,9 +1,9 @@
-package dia_20171111_Catalunya.fase2;
+package dia_20171115_Catalunya.fase3;
 
 public class Comarca {
     
-    private final int codi;
-    private final String nom;
+    private int codi;
+    private String nom;
     private int numMunicipis;
     private int habitants = 0;
     private double superficie = 0;
@@ -44,12 +44,9 @@ public class Comarca {
     public void addHabitants(int habitants) {
         this.habitants += habitants;
     }
-
-    public void addMunicipi() {
-        this.numMunicipis++;
-    }
-
     
+    
+
     @Override
     public String toString() {
         return "Comarca{" + "codi=" + codi + ", nom=" + nom + ", numMunicipis=" + numMunicipis + ", superficie=" + superficie + ", habitants=" + habitants + '}';
